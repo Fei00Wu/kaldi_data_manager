@@ -1,5 +1,5 @@
 # Kaldi Data Manager
-Manage Kaldi-style data as [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) 
+Manage Kaldi-style data directory as [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) 
 for easier data management (train-dev split, etc).
 
 ### Example usage:
