@@ -46,7 +46,9 @@ def _build_recordings(*, wav_file: str,
     recordings = {}
     with open(wav_file, 'r') as fp:
         for line in fp:
-            reco_id, path = line.strip().split()
+            toks = line.strip().split()
+            reco_id = toks[0] 
+            path = ' '.join(toks[1:])
             recordings[reco_id] = db.Recording(wav=path, corpus=corpus, reco_id=reco_id)
     return recordings
 
